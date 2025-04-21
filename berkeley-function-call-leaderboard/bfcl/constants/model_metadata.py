@@ -12,6 +12,12 @@ MODEL_METADATA_MAPPING = {
         "Gorilla LLM",
         "Apache 2.0",
     ],
+    "Aipolabs/deepseek-coder-1.3b-tc-ft": [
+        "DeepSeek-Coder-1.3B-TC-FT (FC)",
+        "https://huggingface.co/Aipolabs/deepseek-coder-1.3b-tc-ft",
+        "Aipolabs",
+        "MIT",
+    ],
     "deepseek-ai/DeepSeek-R1": [
         "DeepSeek-R1 (Prompt) (Local)",
         "https://huggingface.co/deepseek-ai/DeepSeek-R1",
@@ -983,13 +989,7 @@ MODEL_METADATA_MAPPING = {
         "https://huggingface.co/Qwen/QwQ-32B",
         "Qwen",
         "apache-2.0",
-    ],
-    "ThinkAgents/ThinkAgent-1B": [
-        "ThinkAgent-1B (FC)",
-        "https://huggingface.co/ThinkAgents/ThinkAgent-1B",
-        "ThinkAgents",
-        "apache-2.0"
-    ],
+    ]
 }
 
 INPUT_PRICE_PER_MILLION_TOKEN = {

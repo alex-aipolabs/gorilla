@@ -19,7 +19,9 @@ from bfcl.model_handler.api_inference.yi import YiHandler
 from bfcl.model_handler.local_inference.bielik import BielikHandler
 from bfcl.model_handler.local_inference.deepseek import DeepseekHandler
 from bfcl.model_handler.local_inference.deepseek_coder import DeepseekCoderHandler
-from bfcl.model_handler.local_inference.deepseek_reasoning import DeepseekReasoningHandler
+from bfcl.model_handler.local_inference.deepseek_reasoning import (
+    DeepseekReasoningHandler,
+)
 from bfcl.model_handler.local_inference.falcon_fc import Falcon3FCHandler
 from bfcl.model_handler.local_inference.gemma import GemmaHandler
 from bfcl.model_handler.local_inference.glaive import GlaiveHandler
@@ -32,7 +34,6 @@ from bfcl.model_handler.local_inference.llama_3_1 import LlamaHandler_3_1
 from bfcl.model_handler.local_inference.minicpm import MiniCPMHandler
 from bfcl.model_handler.local_inference.minicpm_fc import MiniCPMFCHandler
 from bfcl.model_handler.local_inference.mistral_fc import MistralFCHandler
-from bfcl.model_handler.local_inference.think_agent import ThinkAgentHandler
 from bfcl.model_handler.local_inference.phi import PhiHandler
 from bfcl.model_handler.local_inference.quick_testing_oss import QuickTestingOSSHandler
 from bfcl.model_handler.local_inference.qwen import QwenHandler
@@ -108,6 +109,7 @@ api_inference_handler_map = {
 
 # Inference through local hosting
 local_inference_handler_map = {
+    "Aipolabs/deepseek-coder-1.3b-tc-ft": DeepseekCoderHandler,
     "deepseek-ai/DeepSeek-R1": DeepseekReasoningHandler,  # This is the local version of DeepSeek-R1
     "google/gemma-3-1b-it": GemmaHandler,
     "google/gemma-3-4b-it": GemmaHandler,
@@ -187,7 +189,6 @@ local_inference_handler_map = {
     "uiuc-convai/CoALM-70B": LlamaHandler,
     "uiuc-convai/CoALM-405B": LlamaHandler,
     "BitAgent/BitAgent-8B": LlamaHandler,
-    "ThinkAgents/ThinkAgent-1B": ThinkAgentHandler,
 }
 
 # Inference through third-party inference platforms for open-source models
