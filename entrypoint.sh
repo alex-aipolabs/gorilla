@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Update package list and install openssh-server
+apt update
+DEBIAN_FRONTEND=noninteractive apt-get install openssh-server -y
+
 # Setup SSH
 mkdir -p ~/.ssh
 chmod 700 ~/.ssh
